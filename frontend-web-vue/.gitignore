@@ -27,6 +27,7 @@ coverage
 *.tsbuildinfo
 
 .eslintcache
+.prettier-cache
 
 # Cypress
 /cypress/videos/

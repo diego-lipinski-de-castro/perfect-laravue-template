@@ -17,9 +17,13 @@
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix --cache",
     "lint": "run-s lint:*",
-    "format": "prettier --write --experimental-cli src/"
+    "format": "prettier --write --experimental-cli --cache-location .prettier-cache src/",
+    "mess-detector": "vue-mess-detector analyze src --apply=vue-essential,vue-strong,vue-recommended,implicitParentChildCommunication"
   },
   "dependencies": {
+    "@unhead/vue": "^2.1.1",
+    "@vueuse/core": "^14.1.0",
+    "@vueuse/router": "^14.1.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3"
@@ -49,6 +53,7 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vitest": "^4.0.14",
+    "vue-mess-detector": "^0.68.0",
     "vue-tsc": "^3.1.5"
   }
 }
