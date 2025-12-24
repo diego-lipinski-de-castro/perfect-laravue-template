@@ -17,7 +17,7 @@
         "fakerphp/faker": "^1.23",
         "laravel/boost": "^1.8",
         "laravel/pail": "^1.2.2",
-        "laravel/pint": "^1.24",
+        "laravel/pint": "^1.26",
         "laravel/sail": "^1.41",
         "laravel/telescope": "^5.16",
         "mockery/mockery": "^1.6",
@@ -72,6 +72,9 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ],
+        "pint": [
+            "vendor/bin/pint"
         ]
     },
     "extra": {
