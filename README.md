@@ -13,7 +13,7 @@ Personal template I like to use for Laravel as JSON API backend together with Vu
 
 - Uses PHP 8.5
 - Uses Laravel 12
-- Has lint, format and code quality analyzer (add rector)
+- Has lint, format and code quality analyzer
 - Has tests
 - Has api docs with scramble
 - Has telescope for development
