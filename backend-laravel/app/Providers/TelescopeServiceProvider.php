@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use Override;
 use Laravel\Telescope\IncomingEntry;
 use Laravel\Telescope\Telescope;
 use Laravel\Telescope\TelescopeApplicationServiceProvider;
+use Override;
 
 class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 {
@@ -21,7 +21,7 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 
         $isLocal = $this->app->environment('local');
 
-        Telescope::filter(fn(IncomingEntry $incomingEntry): bool => $isLocal ||
+        Telescope::filter(fn (IncomingEntry $incomingEntry): bool => $isLocal ||
                $incomingEntry->isReportableException() ||
                $incomingEntry->isFailedRequest() ||
                $incomingEntry->isFailedJob() ||
